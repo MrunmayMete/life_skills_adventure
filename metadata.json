@@ -1,0 +1,7 @@
+{
+  "name": "Life Skills Adventure",
+  "description": "An interactive app for kids aged 11-14 to learn essential life skills like communication, emotional intelligence, and more through engaging stories and activities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
