@@ -27,7 +27,14 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const logout = () => {
     setUser(null);
+    // Clear all app-related data from localStorage to reset the state
     localStorage.removeItem('lifeskills_user');
+    localStorage.removeItem('streak_data');
+    localStorage.removeItem('daily_goal');
+    localStorage.removeItem('mood_last_checked');
+    localStorage.removeItem('mood_history');
+    localStorage.removeItem('has_visited');
+    localStorage.removeItem('lifeskills_calendar_events');
   };
 
   return (
